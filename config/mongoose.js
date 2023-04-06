@@ -1,6 +1,6 @@
 // require the library
 const mongoose = require('mongoose');
-// connect to database // used 0.0.0.0 instead of localhost
+// connect to database 
 mongoose.connect('mongodb://0.0.0.0/todo_list_db');
 
 // acquire the connection (to check if it is successful)

@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+// schema of the data
 const todoListSchema = new mongoose.Schema({
     content: {
         type: String,

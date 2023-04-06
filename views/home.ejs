@@ -1,17 +1,20 @@
 <html>
     <head>
+    <!-- Title -->
         <title> <%= 'ToDo App' %> </title>
         <link rel="icon" href="/img/icon.jpg" type="image/icon type">
+    <!-- Added css -->
         <link rel="stylesheet" href="/css/home.css">
-
+    <!-- Added font awesome icons -->
         <script src="https://kit.fontawesome.com/f383b6eabf.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
+    <!-- Heading -->
         <div class="nav-bar">
             <h1>MY TODO LIST</h1>
         </div>
-        
+    <!-- Add a new todo -->
         <div class="new-todo">
             <form class="add-new-todo" action="/create-todo-item" method="POST">
                 <div class="due-date-container">
@@ -21,7 +24,7 @@
                 <input id="new-todo-input" type="text" name="content" placeholder="Create a new todo"/>
           </form>
         </div>
-
+    <!-- Menu bar -->
         <div class="menu">
             <div class="left-menu">
                 <span class="totalTasks">Total tasks (<%= length%>) </span>
@@ -31,10 +34,11 @@
             </div>
         </div>
 
-
+    <!-- If there is no todo -->
         <% if(length == 0) { %>
             <div class="no-todo">Can a todo list be ever empty!</div>
         <% } else { %>
+    <!-- List of todos -->
             <div class="todo-list">
                 <% for (let i of todo_list) { %>
                 <div class="todo-list-item">

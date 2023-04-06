@@ -13,7 +13,7 @@ body {
     --lightSecondary : rgb(139, 105, 217);
     --lightPrimary : rgb(226, 193, 246);
 }
-
+/* Styles for Heading */
 .nav-bar {
     font-family:'Courier New', Courier, monospace;
     text-align: center;
@@ -21,6 +21,7 @@ body {
     color:  var(--darkPrimary);
     text-shadow: 4px 4px 0 var(--lightSecondary);
 }
+/* Styles to add new todo */
 .new-todo {
     margin: auto;
     height: 60px;
@@ -64,6 +65,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 #new-todo-input::placeholder {
     color: var(--themeText);
 }
+/* Styles for menu bar */
 .menu {
     background-color:var(--darkPrimary);
     box-shadow: 1px 2px 5px var(--darkSecondary);
@@ -81,6 +83,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .center-menu span{
     margin-right: 10px;
 }
+/* Styles for todo list */
 .todo-list {
     background-color:var(--darkPrimary);
     margin: auto;
@@ -116,7 +119,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
-/* styles on hover */
+/* Styles on hover */
 .todo-list-item:hover {
     box-shadow: 0 3px 5px var(--lightPrimary);
     transform: scale(1.005);
