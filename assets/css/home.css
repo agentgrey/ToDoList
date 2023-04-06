@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    /* background-color: rgb(118, 64, 145); */
+    background-image: url("/img/3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/* theme colors */
+:root {
+    --darkPrimary :  rgb(51, 7, 71);
+    --darkSecondary : rgb(77, 11, 107);
+    --themeText : rgb(165, 131, 226);
+    --lightSecondary : rgb(139, 105, 217);
+    --lightPrimary : rgb(226, 193, 246);
+}
+
+.nav-bar {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 30px;
+    color:  var(--darkPrimary);
+    text-shadow: 4px 4px 0 var(--lightSecondary);
+}
+.new-todo {
+    margin: auto;
+    height: 60px;
+    width: 600px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+#dueDate {
+    background-color: var(--darkSecondary);
+    color: var(--themeText);
+    height: 50px;
+    width: 130px;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    font-size: 22px;
+    padding-right: 3px;
+}
+#dueDate::placeholder {
+    color: var(--themeText);
+}
+.add-new-todo {
+    display: flex;
+}
+#new-todo-input {
+    background-color: var(--darkSecondary) ;
+    font-size: 18px;
+    color: var(--lightPrimary);
+    padding: 0 25px;
+    width: 600px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+}
+#new-todo-input::placeholder {
+    color: var(--themeText);
+}
+.menu {
+    background-color:var(--darkPrimary);
+    box-shadow: 1px 2px 5px var(--darkSecondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: var(--themeText);
+    margin: auto;
+    padding: 0 20px;
+    height: 60px;
+    width: 560px;
+    margin-bottom: 5px;
+}
+.center-menu span{
+    margin-right: 10px;
+}
+.todo-list {
+    background-color:var(--darkPrimary);
+    margin: auto;
+    height: auto;
+    width: 600px;
+}
+.no-todo {
+    color: var(--lightPrimary);
+    font-weight: 800;
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+.todo-list-item {
+    display: flex;
+    color: var(--lightPrimary);
+    padding: 15px;
+    align-items: center;
+    height: 30px;
+    font-size: 17px;
+    justify-content: space-between;
+}
+.item-option {
+    display: flex;
+    width: 12%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+.del {
+    font-size: 14px;
+    color: var(--lightPrimary);
+}
+
+
+/* styles on hover */
+.todo-list-item:hover {
+    box-shadow: 0 3px 5px var(--lightPrimary);
+    transform: scale(1.005);
+    background-color: var(--darkPrimary);
+    opacity: 0.6;
+}
+.fa-trash:hover {
+    transform: scale(1.3);
+}
