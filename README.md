@@ -1,5 +1,5 @@
 # ToDo List App
-Todo list app made as Minor Project in Coding Ninjas using NodeJS and MongoDB as database.
+Todo list app made as Major Project in Coding Ninjas using NodeJS and MongoDB as database.
 
 ## Instructions
 
@@ -9,7 +9,7 @@ $ git clone https://github.com/agentgrey/TodoList.git
 ```
 Install dependencies.
 ```
-$ npm install express
+$ npm install 
 ```
 Run it
 ```
